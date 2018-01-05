@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/grid_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="3dp">
+
+    <TextView
+        android:id="@+id/classify_value_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_search"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom = "10dp"
+        android:text="@string/about_me"
+        android:textColor="@color/pay_color_black"
+        android:textSize="14sp" />
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_head_portrait" />
+
+    <TextView
+        android:id="@+id/load_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="29dp"
+        android:gravity="center"
+        android:text="@string/no_data"
+        android:textColor="#a4a4a4"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/load_retry"
+        android:layout_width="133dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/load_failure_bg"
+        android:gravity="center"
+        android:text="@string/load_retry"
+        android:textColor="#666666"
+        android:textSize="14sp" />
+
+</LinearLayout>

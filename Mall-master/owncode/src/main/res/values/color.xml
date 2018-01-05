@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 基色 -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="main_color">#70CDB4</color>
+    <color name="home_color_black">#888888</color>
+    <color name="edit_bg">#f3f2ee</color>
+    <color name="me_yellow">#FFAC13</color>
+    <color name="title_blue_color">#00c4bd</color>
+    <color name="navpage">#FFE1E8EB</color>
+    <color name="no_color">#00000000</color>
+    <!-- MenuDrawerLibrary的 -->
+    <color name="md__defaultBackground">#FF555555</color>
+    <color name="calendar_divider">#ffbababa</color>
+    <color name="calendar_text_selected">#ffffffff</color>
+    <color name="calendar_text_inactive">#40778088</color>
+    <color name="calendar_active_month_bg">#fff5f7f9</color>
+    <color name="calendar_text_unselectable">#7f778088</color>
+    <color name="calendar_text_active">#ff778088</color>
+    <color name="calendar_whitetext_active">#ffffff</color>
+    <color name="calendar_selected_day_bg">#ec4849</color>
+    <color name="calendar_selected_range_bg">#ff96caff</color>
+    <color name="calendar_inactive_month_bg">#ffd7d9db</color>
+    <color name="calendar_highlighted_day_bg">#ccffcc</color>
+    <color name="calendar_bg">#ffffffff</color>
+    <color name="edit_black">#99000000</color>
+    <color name="text_color_gray_e">#3f3f40</color>
+    <color name="line_s_bg">#E1E1DF</color>
+    <color name="line_top_bg">#E1E1E1</color>
+    <color name="line_bot_bg">#E6E6E6</color>
+    <color name="line_bg">#F2F2F2</color>
+    <color name="left_menu_bg">#EDEDED</color>
+    <color name="text_color_gray_c">#4B4B4B</color>
+    <color name="main_text_dark">#999999</color>
+    <color name="text_color_gray_b">#868686</color>
+    <color name="text_color_gray_d">#565656</color>
+    <color name="text_color_gray_t">#363636</color>
+    <color name="text_color_gray_a">#A2A2A2</color>
+    <color name="text_color_gray">#ACACAC</color>
+    <color name="province_line_border">#C7C7C7</color>
+    <color name="pay_color_black">#666666</color>
+    <color name="text_color_gray_f">#A7A7A7</color>
+    <color name="text_color_gray_j">#404040</color>
+    <color name="text_color_gray_k">#1c1c1c</color>
+    <color name="text_color_gray_n">#2b2b2b</color>
+    <color name="text_color_gray_m">#c3c3c3</color>
+    <color name="text_color_gray_l">#4e4e4e</color>
+    <color name="text_color_gray_p">#747474</color>
+    <color name="text_color_gray_q">#666666</color>
+    <color name="text_color_gray_r">#5d5d5d</color>
+    <color name="me_blue_color">#7abff8</color>
+    <color name="me_green_color">#7bbb2f</color>
+    <color name="blue_color_a">#5cc6fa</color>
+    <color name="order_text_color_h">#3f3f3f</color>
+    <color name="tab_bg">#F3F3F3</color>
+    <color name="popup_bg_color">#90000000</color>
+    <color name="tab_view_press">#F2F2F2</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="common_list_divider">#dfdfdf</color>
+    <color name="light_gray_text">#949494</color>
+
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+
+    <dimen name="height_tab_bottom_item">50dip</dimen>
+    <dimen name="padding_tab_bottom_drawable">1.0dip</dimen>
+    <dimen name="font_size_tab_item">9.0sp</dimen>
+
+    <integer name="activity_animation_duration">200</integer>
+    <dimen name="more_me_width">15dp</dimen>
+    <dimen name="more_width">15dp</dimen>
+    <dimen name="main_margin">12dp</dimen>
+
+</resources>

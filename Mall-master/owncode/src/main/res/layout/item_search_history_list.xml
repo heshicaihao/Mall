@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/left_menu_bg"
+    android:orientation="vertical"
+    android:paddingLeft="9dp"
+    android:paddingRight="9dp">
+
+    <TextView
+        android:id="@+id/search_key"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_alignParentLeft="true"
+        android:gravity="left|center"
+        android:text="@string/about_me"
+        android:textColor="@color/pay_color_black" />
+
+    <include layout="@layout/view_s_line" />
+
+</LinearLayout>

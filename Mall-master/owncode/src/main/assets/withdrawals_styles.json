@@ -1,0 +1,16 @@
+[
+    {
+        "money": "0",
+        "detail": "",
+        "dt_id": "001",
+        "has_cod": false,
+        "dt_name": "支付宝"
+    },
+    {
+        "money": "0",
+        "detail": "",
+        "dt_id": "002",
+        "has_cod": false,
+        "dt_name": "银联卡"
+    }
+]

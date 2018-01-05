@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/edit_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_browse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <include
+            layout="@layout/view_title_browse" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/middle_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_view"
+        android:layout_below="@+id/title_browse"
+        android:gravity="center">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/middle_viewpage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:paddingBottom="30dp">
+
+        <com.nettactic.mall.widget.MyHScrollView
+            android:id="@+id/h_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/edit_bg"
+            android:gravity="center" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/left"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:paddingBottom="22.5dp"
+                android:paddingTop="22.5dp"
+                android:src="@mipmap/left_pressed" />
+
+            <ImageView
+                android:id="@+id/right"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:paddingBottom="22.5dp"
+                android:paddingTop="22.5dp"
+                android:src="@mipmap/right_pressed" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

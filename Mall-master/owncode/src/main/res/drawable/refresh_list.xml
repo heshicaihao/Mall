@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+    android:oneshot="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@mipmap/refreshpot_1" android:duration="150"/>
+    <item android:drawable="@mipmap/refreshpot_2" android:duration="150"/>
+    <item android:drawable="@mipmap/refreshpot_3" android:duration="150"/>
+    <item android:drawable="@mipmap/refreshpot_4" android:duration="150"/>
+    <item android:drawable="@mipmap/refreshpot_5" android:duration="150"/>
+    <item android:drawable="@mipmap/refreshpot_6" android:duration="150"/>
+    <item android:drawable="@mipmap/refreshpot_7" android:duration="150"/>
+    <item android:drawable="@mipmap/refreshpot_8" android:duration="150"/>
+    <item android:drawable="@mipmap/refreshpot_9" android:duration="150"/>
+</animation-list>

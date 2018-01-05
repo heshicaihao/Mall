@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/traffic"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/main_margin"
+        android:layout_marginRight="@dimen/main_margin"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/express_mode"
+                android:textColor="@color/text_color_gray_n"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/shipping_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="@string/please_express_mode" />
+
+        <ImageView
+            android:layout_width="@dimen/more_width"
+            android:layout_height="@dimen/more_width"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/more" />
+    </LinearLayout>
+
+    <include layout="@layout/view_line" />
+
+    <EditText
+        android:id="@+id/remarks_edit"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_marginBottom="@dimen/main_margin"
+        android:layout_marginLeft="@dimen/main_margin"
+        android:layout_marginRight="@dimen/main_margin"
+        android:layout_marginTop="@dimen/main_margin"
+        android:background="@color/white"
+        android:cursorVisible="false"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="left|top"
+        android:hint="@string/input_remarks_init"
+        android:maxLength="90"
+        android:minLines="6"
+        android:textColorHint="@color/text_color_gray_m"
+        android:textSize="16sp" />
+
+</LinearLayout>

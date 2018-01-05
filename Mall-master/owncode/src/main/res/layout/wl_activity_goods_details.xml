@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nettactic.mall.widget.SildingFinishLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sildingFinishLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/in_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <include layout="@layout/view_title_goods_details" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_ll"
+        android:layout_below="@+id/in_title"
+        android:background="@color/line_bg">
+
+        <ListView
+            android:id="@+id/goods_details_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="#f1f1f1"
+            android:dividerHeight="0dp"
+            android:groupIndicator="@null"
+            android:listSelector="#00000000"
+            android:scrollbars="none" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/goods_details_listview" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/custom_made_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_color"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="10dp"
+        android:text="@string/now_custom_made"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</com.nettactic.mall.widget.SildingFinishLayout>

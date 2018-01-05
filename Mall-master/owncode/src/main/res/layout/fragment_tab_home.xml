@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/left_menu_bg"
+    android:orientation="vertical">
+
+    <com.nettactic.mall.widget.PullToRefreshView
+        android:id="@+id/pull_refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ListView
+            android:id="@+id/goods_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="#f1f1f1"
+            android:dividerHeight="0dp"
+            android:groupIndicator="@null"
+            android:listSelector="#00000000"
+            android:scrollbars="none"
+            android:visibility="visible" />
+
+    </com.nettactic.mall.widget.PullToRefreshView>
+
+    <RelativeLayout
+        android:id="@+id/toprela"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/calendar_selected_day_bg"
+        android:gravity="center|bottom"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/image_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:drawableTop="@drawable/icon_scan_normal"
+            android:gravity="center"
+            android:text="@string/scan"
+            android:textColor="#fff"
+            android:textSize="8sp" />
+
+        <RelativeLayout
+            android:id="@+id/search_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/image_right"
+            android:layout_toRightOf="@+id/image_left"
+            android:background="@drawable/semi_round_backgroud"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/search_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:drawableLeft="@drawable/icon_search"
+                android:gravity="center|left"
+                android:drawablePadding="5dp"
+                android:textColor="@color/white"
+                android:text="@string/search" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/image_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:drawableTop="@drawable/icon_message"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:text="@string/message"
+            android:textColor="#fff"
+            android:textSize="8sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

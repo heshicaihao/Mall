@@ -1,0 +1,88 @@
+{
+    "code": "0",
+    "msg": "数据获取成功",
+    "result": {
+        "image_info": [
+            {
+                "id": "1",
+                "image_url": "http://k.zol-img.com.cn/sjbbs/6718/a6717589_s.jpg"
+            },
+            {
+                "id": "2",
+                "image_url": "http://www.enterdesk.com/uploadfile/2013/0827/20130827021847148.jpg"
+            },
+            {
+                "id": "3",
+                "image_url": "http://attachments.gfan.com/forum/attachments2/day_101217/10121723291f42cbea4b740795.jpg"
+            },
+            {
+                "id": "4",
+                "image_url": "http://img-arch.pconline.com.cn/images/bbs4/20088/3/1217742594362.jpg"
+            },
+            {
+                "id": "5",
+                "image_url": "http://img.pconline.com.cn/images/bbs4/attachment/20097/14/1247510685668.jpg"
+            },
+            {
+                "id": "6",
+                "image_url": "http://img5.niutuku.com/phone/1301/4126/4126-niutuku.com-466673.jpg"
+            },
+            {
+                "id": "7",
+                "image_url": "http://p3.image.hiapk.com/uploads/allimg/131105/23-131105113I7.jpg"
+            },
+            {
+                "id": "8",
+                "image_url": "http://p2.image.hiapk.com/uploads/allimg/131105/23-131105113J0.jpg"
+            },
+            {
+                "id": "9",
+                "image_url": "http://tupian.enterdesk.com/uploadfile/2013/0828/20130828014218183.jpg"
+            },
+            {
+                "id": "10",
+                "image_url": "http://img5.niutuku.com/phone/1301/4416/4416-niutuku.com-481728.jpg"
+            },
+            {
+                "id": "11",
+                "image_url": "http://img5.niutuku.com/phone/1301/3759/3759-niutuku.com-466492.jpg"
+            },
+            {
+                "id": "12",
+                "image_url": "http://p3.image.hiapk.com/uploads/allimg/140827/7730-140RG15220-50.jpg"
+            },
+            {
+                "id": "13",
+                "image_url": "http://img5.niutuku.com/phone/1301/4406/4406-niutuku.com-481709.jpg"
+            },
+            {
+                "id": "14",
+                "image_url": "http://p2.image.hiapk.com/uploads/allimg/140827/7730-140RG60234.jpg"
+            },
+            {
+                "id": "15",
+                "image_url": "http://p3.image.hiapk.com/uploads/allimg/140127/23-14012H03331.jpg"
+            },
+            {
+                "id": "16",
+                "image_url": "http://img.pconline.com.cn/images/bbs4/attachment/20097/14/1247510752311.jpg"
+            },
+            {
+                "id": "17",
+                "image_url": "http://admin.anzow.com/picture/2011102651897944.jpg"
+            },
+            {
+                "id": "18",
+                "image_url": "http://img5.niutuku.com/phone/1301/4406/4406-niutuku.com-481712.jpg"
+            },
+            {
+                "id": "19",
+                "image_url": "http://img5.niutuku.com/phone/1301/4437/4437-niutuku.com-485276.jpg"
+            },
+            {
+                "id": "20",
+                "image_url": "http://img5.niutuku.com/phone/1301/4415/4415-niutuku.com-481727.jpg"
+            }
+        ]
+    }
+}

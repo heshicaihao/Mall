@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:contentDescription="@string/app_name" >
+
+    <com.nettactic.mall.widget.ErrorHintView
+        android:id="@+id/hint_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/content_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <include layout="@layout/view_title_choice_picture" />
+
+        <RelativeLayout
+            android:id="@+id/middle_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ListView
+                android:id="@+id/popup_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@color/no_color"
+                android:divider="@color/no_color"
+                android:listSelector="@color/no_color"
+                android:scrollbars="none"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp" />
+
+            <View
+                android:id="@+id/view_back"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/popup_list_view" />
+
+            <LinearLayout
+                android:id="@+id/middle_grid"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <HorizontalScrollView
+                    android:id="@+id/h_scrollview"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@color/edit_black" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal"
+                        tools:ignore="ScrollViewSize" >
+
+                        <GridView
+                            android:id="@+id/gridview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:listSelector="@android:color/transparent" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

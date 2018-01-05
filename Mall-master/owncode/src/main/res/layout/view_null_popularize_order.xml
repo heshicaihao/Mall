@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_null"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/prompt_image"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/order_null" />
+
+    <TextView
+        android:id="@+id/prompt_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prompt_image"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="50dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/no_popularize_order_info"
+        android:textColor="@color/pay_color_black" />
+    
+
+</RelativeLayout>

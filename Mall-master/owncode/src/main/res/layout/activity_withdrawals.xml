@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/in_title"
+            layout="@layout/view_title" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center|bottom"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/main_margin"
+                    android:paddingRight="@dimen/main_margin"
+                    android:paddingTop="20dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/you_total_balance"
+                        android:textColor="@color/pay_color_black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/total_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:gravity="left|center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/me_yellow"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/total_balance_remark"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="left|center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/pay_color_black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center|top"
+                    android:orientation="horizontal"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="@dimen/main_margin"
+                    android:paddingRight="@dimen/main_margin"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/available_balance"
+                        android:textColor="@color/pay_color_black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/available_balance"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="left|center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/me_yellow"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <include layout="@layout/view_s_line" />
+
+                <EditText
+                    android:id="@+id/withdrawals_num_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:cursorVisible="true"
+                    android:gravity="center_vertical"
+                    android:hint="@string/input_withdrawals_num_init"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="@dimen/main_margin"
+                    android:paddingRight="@dimen/main_margin"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_color_gray_f"
+                    android:textSize="16sp" />
+
+                <include layout="@layout/view_s_line" />
+
+                <LinearLayout
+                    android:id="@+id/withdrawals_styles"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/main_margin"
+                    android:paddingRight="@dimen/main_margin" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="20dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/withdrawals_styles"
+                            android:textColor="@color/text_color_gray_f"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/withdrawals_styles_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="right|center_vertical"
+                        android:singleLine="true"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="@dimen/more_width"
+                        android:contentDescription="@string/app_name"
+                        android:src="@mipmap/down_arrow" />
+                </LinearLayout>
+
+                <include layout="@layout/view_s_line" />
+
+                <LinearLayout
+                    android:id="@+id/ali_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/ali_name_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:cursorVisible="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/input_ali_name_init"
+                        android:paddingLeft="@dimen/main_margin"
+                        android:paddingRight="@dimen/main_margin"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/text_color_gray_f"
+                        android:textSize="16sp" />
+
+                    <include layout="@layout/view_s_line" />
+
+                    <EditText
+                        android:id="@+id/ali_account_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:cursorVisible="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/input_ali_account_init"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/main_margin"
+                        android:paddingRight="@dimen/main_margin"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/text_color_gray_f"
+                        android:textSize="16sp" />
+
+                    <include layout="@layout/view_s_line" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/unionpay_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <EditText
+                        android:id="@+id/unionpay_name_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:cursorVisible="true"
+                        android:drawablePadding="8dp"
+                        android:gravity="center_vertical"
+                        android:hint="@string/input_unionpay_name_init"
+                        android:paddingLeft="@dimen/main_margin"
+                        android:paddingRight="@dimen/main_margin"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/text_color_gray_f"
+                        android:textSize="16sp" />
+
+                    <include layout="@layout/view_s_line" />
+
+                    <EditText
+                        android:id="@+id/unionpay_account_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:cursorVisible="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/input_unionpay_account_init"
+                        android:inputType="number"
+                        android:paddingLeft="@dimen/main_margin"
+                        android:paddingRight="@dimen/main_margin"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/text_color_gray_f"
+                        android:textSize="16sp" />
+
+                    <include layout="@layout/view_s_line" />
+
+                    <EditText
+                        android:id="@+id/unionpay_bank_name_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:cursorVisible="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/input_unionpay_bank_name_init"
+                        android:paddingLeft="@dimen/main_margin"
+                        android:paddingRight="@dimen/main_margin"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/text_color_gray_f"
+                        android:textSize="16sp" />
+
+                    <include layout="@layout/view_s_line" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/withdrawals_notes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_margin"
+                    android:layout_marginRight="@dimen/main_margin"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="@string/withdrawals_notes_ali"
+                    android:textColor="@color/me_yellow"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/main_margin"
+                    android:layout_marginRight="@dimen/main_margin"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/btn_bg"
+                    android:text="@string/submit_apply"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/shipping_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#50000000"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="39dp" >
+
+            <TextView
+                android:id="@+id/shipping_title"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:background="@color/left_menu_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="@string/withdrawals_styles"
+                android:textColor="@color/text_color_gray_l"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/shipping_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/line_s_bg"
+                android:dividerHeight="0dp"
+                android:groupIndicator="@null"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

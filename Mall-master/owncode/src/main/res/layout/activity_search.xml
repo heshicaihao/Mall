@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:openXu="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.nettactic.mall.activity.SearchActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/calendar_selected_day_bg"
+        android:gravity="center|bottom"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:gravity="center"
+            android:padding="8dp"
+            android:src="@mipmap/title_back" />
+
+        <EditText
+            android:id="@+id/search_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/search_textview"
+            android:layout_toRightOf="@+id/back"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:hint="@string/about_me"
+            android:textColorHint="@color/province_line_border"
+            android:background="@drawable/semi_round_backgroud"
+            android:drawableLeft="@drawable/icon_search"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/search_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:text="@string/search"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/main_margin"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hot_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/hot_search" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal_scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:orientation="horizontal"
+                    tools:ignore="ScrollViewSize">
+
+                    <com.nettactic.mall.widget.SingleLineBreakLayout
+                        android:id="@+id/single_hot_search_gridview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        openXu:leftAndRightSpace="10dip"
+                        openXu:rowSpace="10dip" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <com.nettactic.mall.widget.LineBreakLayout
+                android:id="@+id/hot_search_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                openXu:leftAndRightSpace="10dip"
+                openXu:rowSpace="3dip" />
+
+            <LinearLayout
+                android:id="@+id/bottom_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <include layout="@layout/view_line" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/search_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/search_history" />
+
+            <com.nettactic.mall.widget.MyListView
+                android:id="@+id/search_history_listview"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/clean_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="70dp"
+                    android:text="@string/clean_search_history"
+                    android:gravity="center"
+                    android:textColor="@color/text_color_gray_q"
+                    android:textSize="14sp" />
+
+                <include layout="@layout/view_s_line" />
+
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

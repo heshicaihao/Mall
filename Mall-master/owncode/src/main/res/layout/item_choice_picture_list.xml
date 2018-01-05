@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="12dp"
+        tools:ignore="UseCompoundDrawables" >
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:layout_marginRight="5dp"
+            android:gravity="top|left"
+            android:textColor="@color/pay_color_black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_location_tag"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="12dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="top"
+            android:orientation="vertical" >
+
+            <com.nettactic.mall.widget.MyGridView
+                android:id="@+id/mGrid"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@color/no_color"
+                android:divider="@color/no_color"
+                android:listSelector="@color/no_color"
+                android:numColumns="3" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

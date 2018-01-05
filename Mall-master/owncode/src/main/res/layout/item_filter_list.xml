@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="12dp">
+
+    <TextView
+        android:id="@+id/classify_name_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/about_me"
+        android:textColor="@color/text_color_gray_j"
+        android:textSize="16sp" />
+
+    <com.nettactic.mall.widget.MyGridView
+        android:id="@+id/mGrid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@color/no_color"
+        android:divider="@color/no_color"
+        android:listSelector="@color/no_color"
+        android:numColumns="3" />
+
+</LinearLayout>
